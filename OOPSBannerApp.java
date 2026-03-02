@@ -1,44 +1,43 @@
 /**
- * OOPSBannerApp UC4 – Render OOPS as Banner using String Array and Loop
+ * OOPSBannerApp UC5 – Render OOPS as Banner using Inline Array Initialization
  *
- * This use case improves UC3 by storing banner lines
- * in a String array and printing them using a for-each loop,
- * eliminating repetitive print statements.
+ * This use case improves UC4 by declaring and initializing
+ * the String array in a single statement using String.join().
  *
  * @author Alok
- * @version 4.0
+ * @version 5.0
  */
 
 public class OOPSBannerApp {
 
     public static void main(String[] args) {
 
-        // Create String array with 7 lines
-        String[] lines = new String[7];
+        // Inline declaration and initialization
+        String[] lines = {
 
-        // Populate each line using String.join()
-        lines[0] = String.join(" ",
-                "  *****  ", "  *****  ", " ****** ", "  *****  ");
+            String.join(" ",
+                    "  *****  ", "  *****  ", " ****** ", "  *****  "),
 
-        lines[1] = String.join(" ",
-                " *     * ", " *     * ", " *     * ", " *     * ");
+            String.join(" ",
+                    " *     * ", " *     * ", " *     * ", " *     * "),
 
-        lines[2] = String.join(" ",
-                " *     * ", " *     * ", " *     * ", " *       ");
+            String.join(" ",
+                    " *     * ", " *     * ", " *     * ", " *       "),
 
-        lines[3] = String.join(" ",
-                " *     * ", " *     * ", " ******  ", "  *****  ");
+            String.join(" ",
+                    " *     * ", " *     * ", " ******  ", "  *****  "),
 
-        lines[4] = String.join(" ",
-                " *     * ", " *     * ", " *       ", "       * ");
+            String.join(" ",
+                    " *     * ", " *     * ", " *       ", "       * "),
 
-        lines[5] = String.join(" ",
-                " *     * ", " *     * ", " *       ", " *     * ");
+            String.join(" ",
+                    " *     * ", " *     * ", " *       ", " *     * "),
 
-        lines[6] = String.join(" ",
-                "  *****  ", "  *****  ", " *       ", "  *****  ");
+            String.join(" ",
+                    "  *****  ", "  *****  ", " *       ", "  *****  ")
+        };
 
-        // Print using enhanced for-loop
+        // Enhanced for-loop
         for (String line : lines) {
             System.out.println(line);
         }
