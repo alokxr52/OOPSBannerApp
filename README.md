@@ -41,3 +41,15 @@ This improves:
  *     *  *     *  *        *     * 
   *****    *****    *         *****  
 ```
+## UC4 – Refactored using String Array and Enhanced For-Loop
+
+Banner lines stored in a String array and printed using an enhanced for-loop to improve modularity and reduce code repetition.
+
+---
+
+### How to Run
+
+```
+javac OOPSBannerApp.java
+java OOPSBannerApp
+```
