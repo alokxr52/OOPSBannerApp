@@ -53,3 +53,22 @@ Banner lines stored in a String array and printed using an enhanced for-loop to 
 javac OOPSBannerApp.java
 java OOPSBannerApp
 ```
+
+---
+
+## UC5 – Inline Array Initialization
+
+In UC5, the String array is declared and initialized 
+in a single statement using String.join() calls.
+This improves code conciseness and readability.
+
+### Output
+```
+  *****    *****    ******    *****  
+ *     *  *     *  *     *  *     * 
+ *     *  *     *  *     *  *       
+ *     *  *     *  ******    *****  
+ *     *  *     *  *              * 
+ *     *  *     *  *        *     * 
+  *****    *****    *         *****  
+```
