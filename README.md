@@ -111,3 +111,23 @@ This improves modularity and scalability by encapsulating character pattern data
  *     *  *     *  *        *     * 
   *****    *****    *         *****  
 ```
+
+---
+
+## UC8 – Use HashMap for Character Patterns
+
+UC8 introduces the Java Collections Framework by storing ASCII patterns in a `HashMap<Character, String[]>`.
+
+This allows faster retrieval of character patterns and cleaner modular code.
+
+### Output
+
+```
+  ***    ***    *****    ****
+ *   *  *   *  *    *  *
+*     * *     * *    *  *
+*     * *     * *****    ***
+*     * *     * *           *
+ *   *  *   *  *       *
+  ***    ***   *     ****
+```
