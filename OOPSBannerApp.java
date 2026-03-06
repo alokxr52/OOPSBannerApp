@@ -1,45 +1,60 @@
 /**
- * OOPSBannerApp UC5 – Render OOPS as Banner using Inline Array Initialization
- *
- * This use case improves UC4 by declaring and initializing
- * the String array in a single statement using String.join().
+ * OOPSBannerApp UC6 – OOPS Banner Application
+ * Refactors the banner logic into reusable static methods.
  *
  * @author Alok
- * @version 5.0
+ * @version 6.0
  */
 
 public class OOPSBannerApp {
 
+    // Method for letter O
+    public static String[] getOPattern() {
+        return new String[]{
+                "  *****  ",
+                " *     * ",
+                " *     * ",
+                " *     * ",
+                " *     * ",
+                " *     * ",
+                "  *****  "
+        };
+    }
+
+    // Method for letter P
+    public static String[] getPPattern() {
+        return new String[]{
+                " ******  ",
+                " *     * ",
+                " *     * ",
+                " ******  ",
+                " *       ",
+                " *       ",
+                " *       "
+        };
+    }
+
+    // Method for letter S
+    public static String[] getSPattern() {
+        return new String[]{
+                "  *****  ",
+                " *     * ",
+                " *       ",
+                "  *****  ",
+                "       * ",
+                " *     * ",
+                "  *****  "
+        };
+    }
+
     public static void main(String[] args) {
 
-        // Inline declaration and initialization
-        String[] lines = {
+        String[] oPattern = getOPattern();
+        String[] pPattern = getPPattern();
+        String[] sPattern = getSPattern();
 
-            String.join(" ",
-                    "  *****  ", "  *****  ", " ****** ", "  *****  "),
-
-            String.join(" ",
-                    " *     * ", " *     * ", " *     * ", " *     * "),
-
-            String.join(" ",
-                    " *     * ", " *     * ", " *     * ", " *       "),
-
-            String.join(" ",
-                    " *     * ", " *     * ", " ******  ", "  *****  "),
-
-            String.join(" ",
-                    " *     * ", " *     * ", " *       ", "       * "),
-
-            String.join(" ",
-                    " *     * ", " *     * ", " *       ", " *     * "),
-
-            String.join(" ",
-                    "  *****  ", "  *****  ", " *       ", "  *****  ")
-        };
-
-        // Enhanced for-loop
-        for (String line : lines) {
-            System.out.println(line);
+        for (int i = 0; i < oPattern.length; i++) {
+            System.out.println(oPattern[i] + " " + oPattern[i] + " " + pPattern[i] + " " + sPattern[i]);
         }
     }
 }
