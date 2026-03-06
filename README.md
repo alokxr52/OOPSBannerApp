@@ -92,3 +92,22 @@ This improves modularity, readability, and follows the DRY principle.
  *     *  *     *  *        *     * 
   *****    *****    *         *****  
 ```
+
+---
+
+## UC7 – Store Character Pattern in a Class
+
+UC7 introduces an inner class called `CharacterPatternMap` to store each character and its ASCII pattern.
+
+This improves modularity and scalability by encapsulating character pattern data into objects.
+
+### Output
+```
+  *****    *****    ******    *****  
+ *     *  *     *  *     *  *     * 
+ *     *  *     *  *     *  *       
+ *     *  *     *  ******    *****  
+ *     *  *     *  *              * 
+ *     *  *     *  *        *     * 
+  *****    *****    *         *****  
+```
