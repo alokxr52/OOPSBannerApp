@@ -72,3 +72,23 @@ This improves code conciseness and readability.
  *     *  *     *  *        *     * 
   *****    *****    *         *****  
 ```
+
+---
+
+## UC6 – Static Helper Methods
+
+In UC6, the banner logic was refactored into reusable static helper methods.
+
+Separate methods were created for generating the ASCII patterns of the characters O, P, and S.  
+This improves modularity, readability, and follows the DRY principle.
+
+### Output
+```
+  *****    *****    ******    *****  
+ *     *  *     *  *     *  *     * 
+ *     *  *     *  *     *  *       
+ *     *  *     *  ******    *****  
+ *     *  *     *  *              * 
+ *     *  *     *  *        *     * 
+  *****    *****    *         *****  
+```
